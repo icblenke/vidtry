@@ -39,11 +39,11 @@ public class TappableSurfaceView extends SurfaceView {
 		return(true);
 	}
 	
-	void addTapListener(TapListener l) {
+	public void addTapListener(TapListener l) {
 		listeners.add(l);
 	}
 	
-	void removeTapListener(TapListener l) {
+	public void removeTapListener(TapListener l) {
 		listeners.remove(l);
 	}
 	
@@ -59,7 +59,7 @@ public class TappableSurfaceView extends SurfaceView {
 		}
 	};
 	
-	interface TapListener {
+	public interface TapListener {
 		void onTap(MotionEvent event);
 	}
 }
